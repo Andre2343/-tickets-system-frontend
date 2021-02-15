@@ -1,0 +1,52 @@
+@import 'styles/variables.scss';
+
+.ticketsContainer {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  & > a {
+    text-decoration: none;
+  }
+  .ticket {
+    border: 1px solid lightseagreen;
+    padding: 10px;
+    font-size: 16px;
+    color: darkslategray;
+    margin: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    text-decoration: none;
+    box-shadow: 2px 4px 8px lighten($primary-color, 45%);
+    &:hover {
+      box-shadow: 2px 4px 8px lighten($primary-color, 45%);
+    }
+    .removeBtn {
+      padding: 8px;
+      svg {
+        margin: 0;
+      }
+    }
+    .contentWrapper {
+      display: flex;
+      flex-direction: column;
+      text-decoration: none;
+      flex: 1;
+      a {
+        text-decoration: none;
+        color: $primary-color;
+      }
+      .ticketName {
+        font-weight: 500;
+        margin: 0 0 8px 0;
+      }
+      .assignee {
+        font-size: 12px;
+        color: revert;
+        text-transform: capitalize;
+      }
+    }
+  }
+}

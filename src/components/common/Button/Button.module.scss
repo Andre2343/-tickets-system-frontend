@@ -1,0 +1,38 @@
+@import 'styles/variables.scss';
+
+.button {
+  outline: none;
+  margin-left: auto;
+  cursor: pointer;
+  border-radius: 10px;
+  padding: 10px 20px;
+  background-color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s linear;
+  color: $blue-color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  svg {
+    margin-left: 8px;
+  }
+  &:hover {
+    transition: all 0.3s linear;
+    color: white;
+  }
+}
+
+.primary {
+  border: 1px solid $primary-color;
+  &:hover {
+    background-color: lighten($primary-color, 15%);
+  }
+}
+
+.secondary {
+  border: 1px solid $secondary-color;
+  &:hover {
+    background-color: lighten($secondary-color, 15%);
+  }
+}
